@@ -1,0 +1,25 @@
+// Imports
+@import "./_vars";
+@import "./_reset";
+
+body {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: $white;
+
+	position: relative;
+}
+
+// Blocks
+@import "./blocks/_intro";
+@import "./blocks/_container";
+@import "./blocks/_header";
+@import "./blocks/_nav";
+@import "./blocks/_subnav";
+@import "./blocks/_subsubnav";
+@import "./blocks/_benefits";
+@import "./blocks/_about";
+@import "./blocks/_helpers";
+@import "./blocks/_burger";

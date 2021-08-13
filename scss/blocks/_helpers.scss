@@ -1,0 +1,24 @@
+.no-scroll {
+	overflow: hidden;
+}
+
+.bg-helper {
+	width: 14rem;
+	height: 14rem;
+
+	background-color: rgba(#140151, 0.4);
+	backdrop-filter: blur(2rem);
+	border-radius: 50%;
+
+	position: absolute;
+	top: -15rem;
+	left: -14rem;
+	z-index: $z-index-burger;
+
+	transition: 0.5s;
+
+	&.active {
+		top: -5rem;
+		left: -4rem;
+	}
+}

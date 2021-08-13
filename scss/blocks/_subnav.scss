@@ -1,0 +1,65 @@
+.subnav {
+	width: 100%;
+	display: none;
+	padding: 1rem 0;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: $z-index-subnav;
+
+	background-color: rgba(#140151, 0.4);
+	backdrop-filter: blur(2rem);
+
+	//Media
+	@media (max-width: $media-for-tablet) {
+		& {
+			padding: 0;
+			display: block;
+			position: relative;
+
+			background-color: transparent;
+			backdrop-filter: none;
+		}
+	}
+}
+
+.subnav__item {
+	position: relative;
+
+	&:hover {
+		.subnav__link {
+			color: $red;
+		}
+
+		.subsubnav {
+			display: block;
+			// top: -1rem;
+		}
+	}
+}
+
+.subnav__link {
+	display: block;
+	padding: 1rem 2rem;
+
+	color: inherit;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1.21;
+	text-decoration: none;
+
+	transition: color 0.2s linear;
+
+	//Media
+	@media (max-width: $media-for-tablet) {
+		& {
+			padding: 0.5rem 3rem;
+			font-size: 1.5rem;
+		}
+
+		br {
+			display: none;
+		}
+	}
+}
